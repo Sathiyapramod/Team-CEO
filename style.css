@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;800&display=swap');
+
+:root {
+    --primary-ff: 'Nunito', sans-serif;
+}
+
+* {
+    font-family: var(--primary-ff);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.card {
+    width: 15rem;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.thumbnail {
+    display: block;
+}
+
+.thumbnail>img {
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 1rem;
+    transition: transform 0.35s cubic-bezier(0, 0, 0.58, 1);
+}
+
+.profile-image {
+    width: 240px;
+    height: 240px;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.35s cubic-bezier(0, 0, 0.58, 1);
+}
+
+.thumbnail:hover img {
+    transform: scale(1.05);
+}
+
+.thumbnail:hover+.profile-details {
+    opacity: 1;
+}
+
+
+.username {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.designation {
+    font-size: 0.8rem;
+    font-weight: 300;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.logo-thumbnail {
+    display: block;
+}
+
+.logo-thumbnail>img {
+    width: 2.5rem;
+    height: 2.5rem;
+    opacity: 0.5;
+}
+
+@media screen and (min-width:140px) and (max-width:320px) {
+    .profile-image {
+        width: 140px;
+        height: 140px;
+    }
+
+    .card {
+        width: 9rem;
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .username {
+        font-size: 1rem;
+    }
+
+    .designation {
+        font-size: 0.8rem;
+    }
+
+    .logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .logo-thumbnail>img {
+        width: 1.5rem;
+        height: 1.5rem;
+        opacity: 0.5;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:476px) {
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .card {
+        width: 9rem;
+        height: 18rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .username {
+        font-size: 1.1rem;
+    }
+
+    .designation {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width:477px) and (max-width:576px) {
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .card {
+        width: 9rem;
+        height: 18rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.2rem;
+    }
+
+}
+
+@media screen and (min-width:577px)and (max-width:640px) {
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .card {
+        width: 12rem;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.2rem;
+    }
+}
+
+@media screen and (min-width:641px)and (max-width:768px) {
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3.5rem;
+    }
+
+    .card {
+        width: 9rem;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.2rem;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:864px) {
+    .profile-image {
+        width: 180px;
+        height: 180px;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 3.5rem;
+    }
+
+    .card {
+        width: 9rem;
+        height: 20rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.2rem;
+    }
+
+}
