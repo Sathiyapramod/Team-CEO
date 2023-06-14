@@ -1,7 +1,7 @@
 # Team-CEO
 
 
-#### This website was handcrafted using HTML and CSS to showcase the team members of a hypothetical management company. The assets folder contains images used throughout the site.
+#### This website was handcrafted using HTML and CSS to showcase UI for a Sample Project Team . The assets folder contains images used throughout the site.
 
 ## Getting Started
 
